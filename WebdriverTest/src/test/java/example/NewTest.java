@@ -20,10 +20,8 @@ public class NewTest {
 
 	@BeforeTest
 	public void beforeTest() {
-		/*
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Nilesh\\softwares\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
-		*/
 		driver = new ChromeDriver();
 	}
 
