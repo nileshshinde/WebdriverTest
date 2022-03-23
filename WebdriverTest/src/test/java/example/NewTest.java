@@ -2,6 +2,7 @@ package example;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -23,8 +24,9 @@ public class NewTest {
 
 	@BeforeTest
 	public void beforeTest() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		ChromeOptions chromeoptions = new ChromeOptions();
+		WebDriverManager.chromedriver().browserVersion("99.0.4844.82-1").setup();
+		driver = new ChromeDriver(chromeoptions);
 	}
 
 	@AfterTest
