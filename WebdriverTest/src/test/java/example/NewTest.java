@@ -25,7 +25,7 @@ public class NewTest {
 	@BeforeTest
 	public void beforeTest() {
 		ChromeOptions chromeoptions = new ChromeOptions();
-		WebDriverManager.chromedriver().browserVersion("99.0.4844.82-1").setup();
+		WebDriverManager.chromedriver().browserVersion("72.0.3626.81").setup();
 		driver = new ChromeDriver(chromeoptions);
 	}
 
