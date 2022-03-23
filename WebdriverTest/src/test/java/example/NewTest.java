@@ -36,7 +36,10 @@ public class NewTest {
 		chromeoptions.addArguments("--headless");
 		chromeoptions.addArguments("--disable-gpu");
 		chromeoptions.addArguments("--no-sandbox");
+		
+		//WebDriverManager.chromedriver().setup();
 		WebDriverManager.chromedriver().browserVersion("99.0.4844.82-1").setup();
+		
 		driver = new ChromeDriver(chromeoptions);
 	}
 
