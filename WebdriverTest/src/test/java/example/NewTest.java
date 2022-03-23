@@ -25,6 +25,10 @@ public class NewTest {
 	@BeforeTest
 	public void beforeTest() {
 		ChromeOptions chromeoptions = new ChromeOptions();
+		chromeoptions.addArguments("--disable-extensions");
+		chromeoptions.addArguments("--headless");
+		chromeoptions.addArguments("--disable-gpu");
+		chromeoptions.addArguments("--no-sandbox");
 		WebDriverManager.chromedriver().browserVersion("99.0.4844.82-1").setup();
 		driver = new ChromeDriver(chromeoptions);
 	}
