@@ -16,7 +16,14 @@ public class NewTest {
 	private WebDriver driver;
 
 	@Test
-	public void testEasy() {
+	public void testWebsiteTitle1() {
+		driver.get("http://demo.guru99.com/test/guru99home/");
+		String title = driver.getTitle();
+		Assert.assertTrue(title.contains("Demo Guru99 Page"));
+	}
+
+	@Test
+	public void testWebsiteTitle2() {
 		driver.get("http://demo.guru99.com/test/guru99home/");
 		String title = driver.getTitle();
 		Assert.assertTrue(title.contains("Demo Guru99 Page 2"));
