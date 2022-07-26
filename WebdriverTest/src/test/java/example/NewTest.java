@@ -29,6 +29,13 @@ public class NewTest {
 		Assert.assertTrue(title.contains("Demo Guru99 Page 2"));
 	}
 
+	@Test
+	public void testWebsiteTitle3() {
+		driver.get("https://www.google.com/");
+		String title = driver.getTitle();
+		Assert.assertTrue(title.contains("Google"));
+	}
+
 	@BeforeTest
 	public void beforeTest() {
 		ChromeOptions chromeoptions = new ChromeOptions();
