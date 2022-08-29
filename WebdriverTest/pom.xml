@@ -48,6 +48,14 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>4.0.0-M3</version>
+				<configuration>
+					<outputDirectory>${basedir}/target/TestReportHtml</outputDirectory>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<reporting>
@@ -59,14 +67,6 @@
 				<configuration>
 					<showSuccess>true</showSuccess>
 					<outputName>TestReport</outputName>
-					<outputDirectory>${basedir}/target/TestReportHtml</outputDirectory>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>4.0.0-M3</version>
-				<configuration>
 					<outputDirectory>${basedir}/target/TestReportHtml</outputDirectory>
 				</configuration>
 			</plugin>
